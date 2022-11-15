@@ -1,0 +1,94 @@
+:root {
+    --orange: rgb(248, 154, 47);
+    --black: #333;
+    --black-dark: rgb(27, 25, 25);
+    --gray-light: rgb(65, 63, 63);
+}
+body {
+    margin: 0px;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); 
+}
+.wrapper {
+    margin-bottom: 50px;
+    justify-content: center;
+    border: 5px ridge black;
+    border-radius: 9px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: center;
+    width: 347px;
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%); 
+    -webkit-box-shadow: 15px 13px 28px -8px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 15px 13px 28px -8px rgba(66, 68, 90, 1);
+    box-shadow: 15px 13px 28px -8px rgba(66, 68, 90, 1);
+}
+#clear {
+    background-color: var(--orange);
+    color: var(--black-dark);
+    transition-duration: 200ms;
+
+}
+#clear:hover {
+    background-color: var(--black-dark);
+    color: var(--orange);
+    transition-duration: 200ms;
+}
+#output {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 45px;
+    font-weight: 600;
+    width: 333px;
+    height: 70px;
+    text-align: right;
+    margin-bottom: 5px;
+    padding-right: 5px;
+}
+.row {
+    display: flex;
+    gap: 2px;
+}
+.row > button {
+    border: 1px solid black;
+    width: 65px;
+    height: 65px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+button[data-operation], #backspace, #result {
+    background: var(--black);
+    color: var(--orange);
+    font-size: 20px;
+    transition-duration: 150ms;
+
+}
+button[data-operation]:hover, #backspace:hover, #result:hover {
+    font-size: 21px;
+    transition-duration: 150ms;
+    background-color: var(--orange);
+    color: var(--black);
+}
+
+button[data-number] {
+    background-color: var(--gray-light);
+    color: rgb(255, 255, 255);
+    transition-duration: 100ms;
+
+}
+button[data-number]:hover {
+    font-size: 22px;
+    transition-duration: 100ms;
+    background-color:rgb(230, 73, 124);
+}

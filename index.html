@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kalkulator</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="output"></div>
+        <div class="row">
+            <button id="clear">Clear</button>
+            <button data-operation="sqrt">&Sqrt;</button>
+            <button data-operation="pow">x<sup>2</sup></button>
+            <button data-operation="pow3">x<sup>3</sup></button>
+            <button id="backspace">&larr;</button>
+        </div>
+        <div class="row">
+            <button data-operation="factorial">x!</button>
+            <button data-number="7">7</button>
+            <button data-number="8">8</button>
+            <button data-number="9">9</button>
+            <button data-operation="/">&divide;</button>
+        </div>
+        <div class="row">
+            <button data-operation="sin">sin</button>
+            <button data-number="4">4</button>
+            <button data-number="5">5</button>
+            <button data-number="6">6</button>
+            <button data-operation="*">&times;</button>
+        </div>
+        <div class="row">
+            <button data-operation="cos">cos</button>
+            <button data-number="1">1</button>
+            <button data-number="2">2</button>
+            <button data-number="3">3</button>
+            <button data-operation="-">-</button>
+        </div>
+        <div class="row">
+            <button data-operation="tan">tan</button>
+            <button data-number="0">0</button>
+            <button data-number=".">.</button>
+            <button id="result">=</button>
+            <button data-operation="+">+</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
