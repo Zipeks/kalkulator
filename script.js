@@ -90,6 +90,7 @@ result_btn.addEventListener("click", () => {
             calculator.firstNumber = Math.tan(calculator.firstNumber * Math.PI/180);
             break;
     }
+    calculator.action = '';
     if (Math.abs(calculator.firstNumber).toString().length > 9) {
         output.innerText = calculator.firstNumber.toExponential(7);
     } else {
