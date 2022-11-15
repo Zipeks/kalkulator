@@ -23,8 +23,7 @@ backspace.addEventListener('click', () => {
         calculator.firstNumber = Number(output.innerText);
     }
 })
-console.log(calculator.firstNumber)
-console.log(calculator.firstNumber)
+
 numbers.forEach(number_btn => {
     number_btn.addEventListener('click', () => {
         if (!((number_btn.dataset.number.toString() == '.') && output.innerText.includes(".")) && output.innerText.length < 14){
